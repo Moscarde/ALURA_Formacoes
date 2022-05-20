@@ -1,6 +1,6 @@
 # Study Trail
 
-Este repositório conta com atividades e projetos desenvolvidos durante estudos da plataforma Alura
+Este repositório conta com atividades, projetos e desafios desenvolvidos durante estudos da plataforma Alura
 
 ### Cursos Finalizados ou em andamento
 
