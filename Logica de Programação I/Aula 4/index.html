@@ -1,0 +1,30 @@
+<meta charset="UTF-8" />
+
+<script>
+    function pulaLinha(){
+        document.write('<br>')
+    }
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+
+    }
+
+    let anoAtual = 2022
+    let nascGabriel = 1998
+    let nascLaura = 2001
+    let nascNicolas = 2020
+    let idadeGabriel = anoAtual - nascGabriel
+    let idadeLaura = anoAtual - nascLaura
+    let idadeNicolas = anoAtual - nascNicolas
+
+    mostra("Gabriel tem " + idadeGabriel + " anos")
+    mostra("Laura tem " + idadeLaura + " anos")
+    mostra("Nicolas tem " + idadeNicolas + " anos")
+
+    mediaIdade = (idadeGabriel + idadeLaura + idadeNicolas) /3 
+    mostra("A média de idade é: " + Math.round(mediaIdade) )
+
+
+//funçoes e funçoes com parametros
+</script>
