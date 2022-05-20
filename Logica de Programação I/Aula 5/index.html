@@ -1,0 +1,49 @@
+<meta charset="UTF-8" />
+
+<script>
+    function pulaLinha(){
+        document.write('<br>')
+        document.write('<br>')
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    // pesoGabriel= 78
+    // alturaGabriel= 1.78
+    // imcGabriel= pesoGabriel / (alturaGabriel * alturaGabriel)
+    // mostra('O IMC de Gabriel é ' + imcGabriel)
+
+    // pesoNicolas= 13
+    // alturaNicolas= 0.8
+    // imcNicolas= pesoNicolas / (alturaNicolas * alturaNicolas)
+    // mostra('O IMC de Nicolas é ' + imcNicolas)
+
+    function calculaImc(peso, altura){
+        imc = peso / (altura *altura)
+        return imc
+
+    }
+
+    var imcGabriel = calculaImc(78, 1.78)
+    var imcNicolas = calculaImc(13, 0.8)
+
+    mostra("A soma dos imc's é " + Math.round(imcGabriel + imcNicolas))
+
+
+    
+
+    //exercício 11
+    alturaInformada = prompt('Informe a sua altura')
+    pesoInformado = prompt('Informe seu peso')
+
+    imcCalculado = calculaImc(pesoInformado, alturaInformada)
+    mostra('O IMC calculado é ' + imcCalculado )
+    
+    
+    
+    //retorno e inputs
+
+</script>
