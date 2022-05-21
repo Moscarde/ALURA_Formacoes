@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+
+<script>
+    function pulaLinha(){
+        document.write('<br>')
+        document.write('<br>')
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    var numeroSecreto = Math.round(Math.random() * 10)
+
+    for(var tentativas = 3; tentativas > 0; tentativas--){
+        
+        var chute = parseInt(prompt('Digite seu chute, você tem ' + tentativas + ' tentativas'))
+    
+        if(chute == numeroSecreto){
+
+            mostra('Parabéns, você acertou!')
+            break
+        }else{
+            
+            mostra('Você errou!')
+        }
+    }
+
+
+</script>
