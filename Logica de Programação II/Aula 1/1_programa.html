@@ -1,0 +1,88 @@
+<h1>Bandeira Italia</h1>
+<canvas id="italia" width="600" height="400"></canvas>
+<br /><br />
+
+<h1>Bandeira Brasil</h1>
+<canvas id="brasil" width="600" height="400"></canvas>
+<br /><br />
+
+<h1>Creeper</h1>
+<canvas id="creeper" width="500" height="400"></canvas>
+<br /><br />
+
+<h1>Esquadro</h1>
+<canvas id="esquadro" width="600" height="400"></canvas>
+<br /><br />
+
+<script>
+    //FUNCTIONS ZONE
+	function preencherRetangulo(cor, x, y, larg, alt) {
+		pincel.fillStyle = cor;
+		pincel.fillRect(x, y, larg, alt);
+	}
+
+	function preencherLosangulo(cor, x, y, x2, y2, x3, y3, x4, y4) {
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.moveTo(x, y); //Ponto Inicial
+		pincel.lineTo(x2, y2);
+		pincel.lineTo(x3, y3);
+		pincel.lineTo(x4, y4);
+		pincel.fill();
+	}
+
+    function preencherTriangulo(cor, x, y, x2, y2, x3, y3) {
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.moveTo(x, y); //Ponto Inicial
+		pincel.lineTo(x2, y2);
+		pincel.lineTo(x3, y3);
+		pincel.fill();
+	}
+
+	function preencherCirculo(cor, x, y, raio) {
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.arc(x, y, raio, 0, 2 * 3.14);
+		pincel.fill();
+	}
+    //END OF FUNCTIONS ZONE
+
+
+    //CODE ZONE
+	//italia
+	var tela = document.getElementById("italia");
+	var pincel = tela.getContext("2d");
+
+	preencherRetangulo("green", 0, 0, 200, 400);
+	preencherRetangulo("white", 200, 0, 200, 400);
+	preencherRetangulo("red", 400, 0, 200, 400);
+
+	//brasil
+	var tela = document.getElementById("brasil");
+	var pincel = tela.getContext("2d");
+
+	preencherRetangulo("green", 0, 0, 600, 400);
+	preencherLosangulo("yellow", 300, 50, 50, 200, 300, 350, 550, 200);
+	preencherCirculo("blue", 300, 200, 75);
+
+	//creeper
+	var tela = document.getElementById("creeper");
+	var pincel = tela.getContext("2d");
+
+	preencherRetangulo("green", 0, 0, 500, 400);
+	preencherRetangulo("black", 80, 85, 120, 120); //left eye
+	preencherRetangulo("black", 300, 85, 120, 120); //right eye
+	preencherRetangulo("black", 200, 205, 100, 140); //mouth block
+	preencherRetangulo("black", 150, 260, 50, 150); //left mouth
+	preencherRetangulo("black", 300, 260, 50, 150); //right mounth
+
+	//esquadro
+	var tela = document.getElementById("esquadro");
+	var pincel = tela.getContext("2d");
+
+    preencherTriangulo('black', 50, 50, 50, 400, 400, 400)
+    preencherTriangulo('white', 100, 175, 100, 350, 275, 350)
+
+
+</script>

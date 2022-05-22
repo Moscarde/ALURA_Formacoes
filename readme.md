@@ -7,3 +7,4 @@ Este repositório conta com atividades, projetos e desafios desenvolvidos durant
 - [x] Lógica de programação I: os primeiros programas com Javascript e HTML
 - [ ] Lógica de programação II: pratique com desenhos, animações e um jogo
 
+
