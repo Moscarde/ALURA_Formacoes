@@ -6,7 +6,7 @@
 	pincel.fillRect(0, 0, 600, 400);
 
 	function exibeAlerta(evento) {
-		if (ligado == true) {
+		if (ligado) {
 			var x = evento.pageX - tela.offsetLeft;
 			var y = evento.pageY - tela.offsetTop;
 			console.log("x = " + x + ", y = " + y);
