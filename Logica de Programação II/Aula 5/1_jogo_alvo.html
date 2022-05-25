@@ -1,0 +1,55 @@
+<canvas width="600" height="400>"></canvas>
+<script>
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+
+	function desenhaCirculo(x, y, raio, cor) {
+		pincel.fillStyle = cor;
+		pincel.beginPath();
+		pincel.arc(x, y, raio, 0, 2 * Math.PI);
+		pincel.fill();
+	}
+
+	function limpaTela() {
+		pincel.clearRect(0, 0, 600, 400);
+	}
+	function desenhaAlvo() {
+		desenhaCirculo(x, y, raio + 20, "red");
+		desenhaCirculo(x, y, raio + 10, "white");
+		desenhaCirculo(x, y, raio, "red");
+	}
+
+	function movimentarAlvo() {
+		x = Math.round(Math.random() * 580);
+		y = Math.round(Math.random() * 380);
+		limpaTela();
+		desenhaAlvo();
+	}
+	function checarAlvo(evento) {
+		var xmouse = evento.pageX - tela.offsetLeft;
+		var ymouse = evento.pageY - tela.offsetTop;
+
+		if (
+			xmouse > x - raio &&
+			xmouse < x + raio &&
+			ymouse > y - raio &&
+			ymouse < y + raio
+		) {
+			pontuação++;
+			console.log("Pontuação = " + pontuação);
+		} else {
+			console.log("errooooouuuu");
+		}
+		movimentarAlvo;
+	}
+
+	var x = 300;
+	var y = 200;
+	var raio = 10;
+	var pontuação = 0;
+
+	movimentarAlvo();
+	var velocidade = prompt("Digite a dificuldade 1-3");
+	setInterval(movimentarAlvo, 3000 / velocidade);
+	tela.onclick = checarAlvo;
+</script>
