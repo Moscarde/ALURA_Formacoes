@@ -1,4 +1,4 @@
-# Aula 3 - Resumo
+# Aula 3 - Snippets
 >**tela.onclick = funcao;** // chama uma função pelo clique do mouse
 
 >**tela.onmousemove = funcao;**// chama uma função pelo movimento do mouse

@@ -1,4 +1,4 @@
-# Aula 4 - Resumo
+# Aula 4 - Snippets e Implementações
 > **setInterval(*funçao, tempo em ms*)**
 
 Chama a função repetidas vezes de acordo com o tempo
@@ -8,5 +8,5 @@ Chama a função repetidas vezes de acordo com o tempo
 - Usando o *event* para pegar a tecla apertada e criando uma interação com a "bolinha"
 
 ## Spinets
-- Mudando o valor boleano de uma variavel
 > var = !var
+- Mudando o valor boleano de uma variavel
