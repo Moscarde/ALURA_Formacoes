@@ -8,7 +8,7 @@ function draw() {
 	showCar()
 	moveCar()
 	moveActor()
-
+	resetPosXCar()
 }
 
 

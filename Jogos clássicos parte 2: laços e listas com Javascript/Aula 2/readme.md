@@ -1,11 +1,7 @@
-# Aula 1 e 2
+# Aula 2
 
-- Biblioteca p5js
-- Carregando e exibindo imagens
-- Movimento Carro
-- Movimento Jogador
-
->function preload(){} //é chamada uma vez antes do draw
+- Separando scripts por arquivo
+- Inserindo mais carros
+- Resetando a posX dos carros quando terminam de passar na tela
 
 
->circle()
