@@ -1,12 +1,7 @@
-# Aula 1
+# Parte 1
 
-> h1> titulo 
-
-> p> paragrafo 
-
-> strong> deixa em negrito
-
-> em> deixa em italico
-
-
-
+- Criação do html
+- Tags html
+- Link com css
+- Identificadores e Classes
+- Atributos css
