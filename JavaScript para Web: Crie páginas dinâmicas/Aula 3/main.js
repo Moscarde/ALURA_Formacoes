@@ -2,8 +2,12 @@ function alerta() {
     alert('Olá Mundo')
 }
 function tocaSomPom() {
-    console.log('cu');
-    document.querySelector('#som_tecla_pom').play
+    document.querySelector('#som_tecla_pom').play()
 }
 
-document.querySelector('.tecla_pom').onclick = tocaSomPom
+const listaDeTeclas = document.querySelectorAll('.tecla')
+
+
+for (var i = 0; i < listaDeTeclas.length; i++){
+    listaDeTeclas[i].onclick = tocaSomPom
+}
