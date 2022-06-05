@@ -82,10 +82,10 @@ footer {
 }
 
 /* Contato */
-main{
+/* main{
 	width: 940px;
 	margin: 0 auto;
-}
+} */
 form{
 	margin: 40px 0;
 }
@@ -143,6 +143,16 @@ th, td {
 	margin: 0 0 1em;
 	clear: left;
 }
+.titulo-principal:first-letter{
+	font-weight: bold;
+}
+
+.principal{
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
 .principal p {
 	margin: 0 0 1em;
 }
@@ -155,20 +165,30 @@ th, td {
 
 .localizacao{
 	padding: 3em 0;
+	background: linear-gradient(#fefefe,#888888);
+
 }
 .localizacao p{
 	margin: 0 0 2em;
 	text-align: center;
 }
+.mapa-frame{
+	width: 940px;
+	margin: 0 auto;
+}
 
 .beneficios{
 	padding: 3em 0;
+	background: #888888;
 }
 .itens{
 	line-height: 1.5em;
 }
 .itens:first-child{
 	font-weight: bold;
+}
+.itens:before{
+	content: "🟊";
 }
 
 .conteudo-beneficios{
@@ -178,7 +198,7 @@ th, td {
 
 .lista-beneficios{
 	width: 40%;
-	background-color: #666666;
+
 	display: inline-block;
 	vertical-align: top;
 }
