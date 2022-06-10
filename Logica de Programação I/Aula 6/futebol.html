@@ -1,0 +1,30 @@
+<meta charset="UTF-8" />
+
+<script>
+    function pulaLinha(){
+        document.write('<br>')
+        document.write('<br>')
+    }
+
+    function mostra(frase){
+        document.write(frase)
+        pulaLinha()
+    }
+
+    var vitorias = parseInt(prompt('Entre com o número de vitorias'))
+    var empates = parseInt(prompt('Entre com o número de empates')) 
+    pontuacao = (vitorias * 3) + empates
+
+    mostra('O total de pontos é ' + pontuacao)
+
+    if(pontuacao > 28){
+        mostra('Seu time esta melhor que no ano passado')
+    }
+    if(pontuacao < 28){
+        mostra('Seu time esta pior que no ano passado')
+    }
+    if(pontuacao == 28){
+        mostra('Seu time esta igual ao ano passado')
+    }
+    mostra('FIM')
+</script>

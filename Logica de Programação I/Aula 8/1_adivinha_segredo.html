@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<input/>
+<button>Compare com meu segredo</button>
+
+<script>
+    var inputHtml = document.querySelector("input")
+    inputHtml.focus()
+    var numeroSecreto = 5
+    
+    function compararNumeros(){
+
+        if(inputHtml.value == numeroSecreto){
+            alert('Você acertou')
+        }else{
+            alert('Você errou')
+            inputHtml.value = ''
+            inputHtml.focus()
+        }
+    }
+    var buttonHtml = document.querySelector("button")
+    buttonHtml.onclick = compararNumeros
+
+</script>

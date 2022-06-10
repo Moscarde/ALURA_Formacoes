@@ -1,0 +1,63 @@
+<center>
+	<h1>Quadro</h1>
+	<canvas width="400" height="400"></canvas>
+	<br /><br />
+	<button id="btnUp">Cima</button><br />
+	<button id="btnLeft">Esquerda</button>
+	<button id="btnDown">Baixo</button>
+	<button id="btnRight">Direita</button>
+</center>
+
+<script>
+	//FUNCTIONS ZONE
+	var xInit = 190;
+	var yInit = 190;
+
+	function preencherRetangulo(direcao) {
+        if (direcao == "left") {
+            xInit -= 10;
+		}
+		if (direcao == "right") {
+            xInit += 10;
+		}
+		if (direcao == "up") {
+            yInit -= 10;
+		}
+		if (direcao == "down") {
+            yInit += 10;
+		}
+        pincel.fillStyle = "black";
+        pincel.fillRect(xInit, yInit, 10, 10);
+	}
+
+	//gambiarra maluca
+	function goLeft() {
+		preencherRetangulo("left");
+	}
+	function goRight() {
+		preencherRetangulo("right");
+	}
+	function goUp() {
+		preencherRetangulo("up");
+	}
+	function goDown() {
+		preencherRetangulo("down");
+	}
+
+	//END OF FUNCTIONS ZONE
+
+	//CODE ZONE
+	//italia
+	var tela = document.querySelector("canvas");
+	var pincel = tela.getContext("2d");
+	var btnUp = document.getElementById("btnUp");
+	var btnLeft = document.getElementById("btnLeft");
+	var btnDown = document.getElementById("btnDown");
+	var btnRight = document.getElementById("btnRight");
+	pincel.strokeRect(0, 0, 400, 400);
+
+	btnLeft.onclick = goLeft;
+	btnRight.onclick = goRight;
+	btnUp.onclick = goUp;
+	btnDown.onclick = goDown;
+</script>

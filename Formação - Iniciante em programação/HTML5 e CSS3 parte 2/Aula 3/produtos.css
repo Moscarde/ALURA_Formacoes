@@ -1,0 +1,26 @@
+.cabecalho{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px
+
+}
+nav a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
