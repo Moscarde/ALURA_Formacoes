@@ -19,4 +19,5 @@ Este repositório conta com atividades, projetos e desafios desenvolvidos durant
 
 ## Formação: Javascript para back-end
 
-- [ ] Javascript: tipos, variáveis e funções
+- [x] Javascript: tipos, variáveis e funções
+- [ ] Javascript: arrays
