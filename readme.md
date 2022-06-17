@@ -2,11 +2,6 @@
 
 Este repositório conta com atividades, projetos e desafios desenvolvidos durante estudos da plataforma Alura
 
-### Cursos Finalizados ou em andamento
-
-- [x] Lógica de programação I: os primeiros programas com Javascript e HTML
-- [x] Lógica de programação II: pratique com desenhos, animações e um jogo
-
 ## Formação: Iniciante em programação
 
 - [x] Jogos clássicos parte 1: Pong com Javascript
@@ -20,4 +15,9 @@ Este repositório conta com atividades, projetos e desafios desenvolvidos durant
 ## Formação: Javascript para back-end
 
 - [x] Javascript: tipos, variáveis e funções
-- [ ] Javascript: arrays
+- [x] Javascript: arrays
+
+## Outros cursos
+
+- [x] Lógica de programação I: os primeiros programas com Javascript e HTML
+- [x] Lógica de programação II: pratique com desenhos, animações e um jogo
