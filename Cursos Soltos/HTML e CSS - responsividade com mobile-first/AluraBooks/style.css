@@ -14,6 +14,7 @@
     --azul: #002F52;
     --fonte-principal: "Poppins";
     --preto: #000
+    --fonte-secundaria: "Josefin Sans"
 }
 body{
     background-color: var(--cor-de-fundo);
