@@ -11,8 +11,11 @@
     <!-- fonts.google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- carrossel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -59,7 +62,68 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./img/livros/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+                <div class="swiper-slide"><img src="./img/livros/Javascript.svg" alt="Livro sobre Javascript"></div>
+                <div class="swiper-slide"><img src="./img/livros/Nodejs.svg" alt="Livro sobre NodeJs"></div>
+                <div class="swiper-slide"><img src="./img/livros/Portugol.svg" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="./img/livros/ReactNative.svg" alt="Livro sobre ReactNative"></div>
+            </div>
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card__descrição">
+                <!-- 1 coluna -->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                </div>
+                <!-- 2 coluna -->
+                <img src="./img/cards/Angular.svg" alt="Logo Angular" class="descrição__imagem">
+            </div>
+
+            <!-- 2 linha -->
+            <div class="card__botões">
+                <!-- 1 coluna -->
+                <ul class="botões">
+                    <li class="botões__item"><img src="./img/Favoritos.svg" alt="Adicionar livro aos favoritos"></li>
+                    <li class="botões__item"><img src="./img/Compras.svg" alt="Adicionar livro ao carrinho"></li>
+                </ul>
+                <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+        </div>
+
     </section>
+    
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
