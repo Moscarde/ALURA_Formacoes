@@ -46,3 +46,9 @@
     text-align: center;
     
 }
+@media screen and (min-width: 1024px) {
+    .card{
+        width:40%;
+        margin: 2em auto
+    }
+}
