@@ -99,3 +99,30 @@
         width: auto;
     }
 }
+
+/* itens desktop only */
+.container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 1728px) {
+    .container__texto{
+        display: block;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--preto);
+    }
+    .cabecalho{
+        display: flex;
+        padding: 0 5em;
+    }
+    .menu-1024{
+        margin-right: auto;
+        margin-left: 4em;
+    }
+}

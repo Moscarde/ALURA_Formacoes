@@ -42,3 +42,17 @@ hr{
         margin-left: 0.6em;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape__titulo, .lista-rodape{
+        width: 18%;
+        padding-left: 1em;
+    }
+    .lista-rodape{
+        border-left: 1px solid var(--cinza);
+    }
+    .rodape{
+        justify-content: center;
+    }
+
+}
