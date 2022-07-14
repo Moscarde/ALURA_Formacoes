@@ -16,11 +16,12 @@ Este repositório conta com atividades, projetos e desafios desenvolvidos durant
 
 - [x] Javascript: tipos, variáveis e funções
 - [x] Javascript: Arrays
-- [ ] Javascript: Objetos
+- [x] Javascript: Objetos
 
 ## Outros cursos
 
 - [x] Lógica de programação I: os primeiros programas com Javascript e HTML
 - [x] Lógica de programação II: pratique com desenhos, animações e um jogo
 - [x] HTML e CSS: responsividade com mobile-first
-- [ ] Layouts Responsivos
+- [x] Layouts Responsivos
+- [ ] CSS Grid: simplificando layouts
