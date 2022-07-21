@@ -26,3 +26,5 @@ const precosLivros = [
 ];
 
 module.exports = precosLivros;
+
+console.log(precosLivros[0].titulo[0])
