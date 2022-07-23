@@ -1,8 +1,8 @@
 const { edGalho, edFolha } = require("./Arquivos base/aula-1/arrays")
+let listaFinal = [];
 
 
 function juntaListas(lista1, lista2) {
-    let listaFinal = [];
     let posLista1 = 0
     let posLista2 = 0
 
@@ -32,8 +32,8 @@ function juntaListas(lista1, lista2) {
         listaFinal.push(lista2[posLista2]);
         posLista2++
     }
-    console.log(listaFinal);
-
+    
 }
 
 juntaListas(edFolha, edGalho)
+console.table(listaFinal);
