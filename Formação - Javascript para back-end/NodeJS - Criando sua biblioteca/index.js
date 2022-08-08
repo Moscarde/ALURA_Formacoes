@@ -9,13 +9,10 @@ async function pegaArquivoAsyncAwait(caminhoDoArquivo) {
     try {
         const texto = await fs.promises.readFile(caminhoDoArquivo, 'utf-8')
         // console.log(chalk.yellow(texto))
-        console.log(extraiLinks(texto))
+        return extraiLinks(texto)
     }
     catch (err) {
         trataErro(err)
-    }
-    finally {
-        console.log(chalk.yellow('Aplicação finalizada'))
     }
 
 }
@@ -29,7 +26,7 @@ function extraiLinks(texto) {
     while ((temp = regex.exec(texto)) !== null) {
         arrayResultados.push({ [temp[1]]: temp[2] })
     }
-    return arrayResultados;
+    return arrayResultados.length === 0 ? 'Não há links' : arrayResultados;
 }
 
 function pegaArquivoThenCatch(caminhoDoArquivo) {
@@ -51,4 +48,8 @@ function pegaArquivo(caminhoDoArquivo) {
 
 // pegaArquivo('./arquivos/readme.mda')
 // pegaArquivoThenCatch('./arquivos/readme.mda')
-pegaArquivoAsyncAwait('./arquivos/readme.md')
+
+// pegaArquivoAsyncAwait('./arquivos/readme.md')
+
+
+module.exports = pegaArquivoAsyncAwait
