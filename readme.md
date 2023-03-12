@@ -1,5 +1,7 @@
 # Study Trail
 
+> :warning: **Atualmente não estou mais estudando pela plataforma da alura. Este repositório de estudo e atividades ficará desatualizado.
+
 Este repositório conta com atividades, projetos e desafios desenvolvidos durante estudos da plataforma Alura
 
 ## Formação: Iniciante em programação
