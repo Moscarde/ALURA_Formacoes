@@ -1,4 +1,4 @@
-# Study Trail
+# Formações Alura
 
 > :warning: **Atualmente não estou mais estudando pela plataforma da alura. Este repositório de estudo e atividades ficará desatualizado.
 
